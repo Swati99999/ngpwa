@@ -1,0 +1,352 @@
+<style>
+.select2-container
+{
+  width:100% !important;
+}
+  </style>
+<body style="background-color: #fbfbfb;">
+
+  <header class="cstm-header">
+    <nav class="navbar navbar-expand-sm bg-clr navbar-dark header-nav-bar">
+      <a class="navbar-brand" [routerLink]="['/home']">Health Monitor</a>
+    </nav>
+  </header>
+  <section class="middal-section recomn" style="">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+          <h2 class="title recommendation">All Recommendations for you</h2>
+        </div>
+      </div>
+
+      <div class="container-fluid search-area">
+
+        <div class="row">
+          <div class="col-md-12">
+            <ng-select [items]="items" bindLabel="name" placeholder="Select" appendTo="body" multiple="true"></ng-select>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-6 col-md-12 col-sm-12">
+          <div class="card cstm-card">
+            <a href="">
+              <div class="card-top-header">
+                <div class="card-header-img">
+                  <figure><img src="../../assets/images/small-icon/sleep.png" /></figure>
+                  <figure><img src="../../assets/images/small-icon/heart.png" /></figure>
+                </div>
+              </div>
+              <div class="container-fluid">
+                <div class="row align-items-center">
+                  <div class="col-lg-3 col-md-3">
+
+                    <div class="card-body card-body-area card-body-rec">
+                      <div class="card-body-img">
+                        <figure><img src="../../assets/images/apple-img.png" /></figure>
+                      </div>
+
+                    </div>
+                  </div>
+                  <div class="col-lg-9 col-md-9">
+                    <div class="card-body card-body-area card-body-content">
+                      <p>Take 300 ml Cherry juice or 320 mg
+                        Anthocyanins to reduce your blood
+                        pressure.</p>
+                      <span>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        5 Ratings
+                      </span>
+
+
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-12 col-sm-12">
+          <div class="card cstm-card">
+            <a href="">
+              <div class="card-top-header">
+                <div class="card-header-img">
+                  <!--<figure><img src="images/small-icon/sleep.png"/></figure>-->
+                  <figure><img src="../../assets/images/small-icon/heart.png" /></figure>
+                </div>
+              </div>
+              <div class="container-fluid">
+                <div class="row align-items-center">
+                  <div class="col-lg-3 col-md-3">
+
+                    <div class="card-body card-body-area card-body-rec">
+                      <div class="card-body-img">
+                        <figure><img src="../../assets/images/foot.png" /></figure>
+                      </div>
+
+                    </div>
+                  </div>
+                  <div class="col-lg-9 col-md-9">
+                    <div class="card-body card-body-area card-body-content">
+                      <p>Samatha - Meditation helps with the
+                        reduction of your stress level and the
+                        heart rate variability (HRV).</p>
+                      <span>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        5 Ratings
+                      </span>
+
+
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-12 col-sm-12">
+          <div class="card cstm-card">
+            <a href="">
+              <div class="card-top-header">
+                <div class="card-header-img">
+                  <figure><img src="../../assets/images/small-icon/sleep.png" /></figure>
+                  <!--<figure><img src="images/small-icon/heart.png"/></figure>-->
+                </div>
+              </div>
+              <div class="container-fluid">
+                <div class="row align-items-center">
+                  <div class="col-lg-3 col-md-3">
+
+                    <div class="card-body card-body-area card-body-rec">
+                      <div class="card-body-img">
+                        <figure><img src="../../assets/images/apple-img.png" /></figure>
+                      </div>
+
+                    </div>
+                  </div>
+                  <div class="col-lg-9 col-md-9">
+                    <div class="card-body card-body-area card-body-content">
+                      <p>One Whole Yellow strips scad (fish)
+                        or 1000 mg Omega 3- fatty acids reduce BMI and Blood pressure.</p>
+                      <span>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        5 Ratings
+                      </span>
+
+
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-12 col-sm-12">
+          <div class="card cstm-card">
+            <a href="">
+              <div class="card-top-header">
+                <div class="card-header-img">
+                  <figure><img src="../../assets/images/small-icon/sleep.png" /></figure>
+                  <!--<figure><img src="images/small-icon/heart.png"/></figure>-->
+                </div>
+              </div>
+              <div class="container-fluid">
+                <div class="row align-items-center">
+                  <div class="col-lg-3 col-md-3">
+
+                    <div class="card-body card-body-area card-body-rec">
+                      <div class="card-body-img">
+                        <figure><img src="../../assets/images/apple-img.png" /></figure>
+                      </div>
+
+                    </div>
+                  </div>
+                  <div class="col-lg-9 col-md-9">
+                    <div class="card-body card-body-area card-body-content">
+                      <p>One Whole Yellow strips scad (fish)
+                        or 1000 mg Omega 3- fatty acids reduce BMI and Blood pressure.</p>
+                      <span>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        5 Ratings
+                      </span>
+
+
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-12 col-sm-12">
+          <div class="card cstm-card">
+            <a href="">
+              <div class="card-top-header">
+                <div class="card-header-img">
+                  <!--<figure><img src="images/small-icon/sleep.png"/></figure>-->
+                  <figure><img src="../../assets/images/small-icon/heart.png" /></figure>
+                </div>
+              </div>
+              <div class="container-fluid">
+                <div class="row align-items-center">
+                  <div class="col-lg-3 col-md-3">
+
+                    <div class="card-body card-body-area card-body-rec">
+                      <div class="card-body-img">
+                        <figure><img src="../../assets/images/foot.png" /></figure>
+                      </div>
+
+                    </div>
+                  </div>
+                  <div class="col-lg-9 col-md-9">
+                    <div class="card-body card-body-area card-body-content">
+                      <p>Samatha - Meditation helps with the
+                        reduction of your stress level and the
+                        heart rate variability (HRV).</p>
+                      <span>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        5 Ratings
+                      </span>
+
+
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-12 col-sm-12">
+          <div class="card cstm-card">
+            <a href="">
+              <div class="card-top-header">
+                <div class="card-header-img">
+                  <figure><img src="../../assets/images/small-icon/sleep.png" /></figure>
+                  <!--<figure><img src="images/small-icon/heart.png"/></figure>-->
+                </div>
+              </div>
+              <div class="container-fluid">
+                <div class="row align-items-center">
+                  <div class="col-lg-3 col-md-3">
+
+                    <div class="card-body card-body-area card-body-rec">
+                      <div class="card-body-img">
+                        <figure><img src="../../assets/images/apple-img.png" /></figure>
+                      </div>
+
+                    </div>
+                  </div>
+                  <div class="col-lg-9 col-md-9">
+                    <div class="card-body card-body-area card-body-content">
+                      <p>One Whole Yellow strips scad (fish)
+                        or 1000 mg Omega 3- fatty acids reduce BMI and Blood pressure.</p>
+                      <span>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        5 Ratings
+                      </span>
+
+
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12">
+          <div class="view-more"><button class="view-button">View More</button></div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <div data-spm="footer" id="footer-bar" data-aplus-ae="x2_3d0459a0"
+    data-spm-anchor-id="a2g0n.home.0.footer.121e78c95m2fY3">
+    <div class="footer-item">
+      <a id="footer-home" [routerLink]="['/home']" data-spm="d_home">
+        <figure class="inactive-icon"><img src="../../assets/images/icon/home-inactive.png" width="40" height="40">
+        </figure>
+        <figure class="active-icon"><img src="../../assets/images/icon/home-active.png" width="40" height="40"></figure>
+        <span class="footer-text footer-active">Home</span>
+      </a>
+    </div>
+    <div class="footer-item">
+      <a id="footer-category" [routerLink]="['/day-steps']" data-spm="d_category">
+        <figure class="inactive-icon"><img src="../../assets/images/icon/calnender-inactive.png" width="40" height="40">
+        </figure>
+        <figure class="active-icon"><img src="../../assets/images/icon/calnender-active.png" width="40" height="40">
+        </figure>
+        <span class="footer-text">Today</span>
+      </a>
+    </div>
+    <div class="footer-item">
+      <a id="footer-cart" [routerLink]="['/recommendations']" data-spm="d_shopcart" class="active">
+        <figure class="inactive-icon"><img src="../../assets/images/icon/recomandation-inactive.png" width="40"
+            height="40"></figure>
+        <figure class="active-icon"><img src="../../assets/images/icon/recomandation-active.png" width="40" height="40">
+        </figure>
+        <span class="footer-text">Recommendation</span>
+      </a>
+    </div>
+    <div class="footer-item">
+      <a id="footer-account" [routerLink]="['/devices']" data-spm="d_account">
+        <figure class="inactive-icon"><img src="../../assets/images/icon/devices-inactive.png" width="40" height="40">
+        </figure>
+        <figure class="active-icon"><img src="../../assets/images/icon/devices-active.png" width="40" height="40">
+        </figure>
+        <span class="footer-text">Device</span>
+      </a>
+    </div>
+    <div class="footer-item">
+      <a id="footer-account" [routerLink]="['/profile']" data-spm="d_account">
+        <div class="profile-area">
+          <figure class="profilepik"><img src="../../assets/images/profile.jpg" width="40" height="40" /></figure>
+        </div>
+        <span class="footer-text">Profile</span>
+      </a>
+    </div>
+  </div>
+
+
+</body>
+
+<script>
+  $('.footer-item a').click(function (e) {
+    e.preventDefault();
+    $('a').removeClass('active');
+    $(this).addClass('active');
+  });
+</script>

@@ -1,0 +1,230 @@
+<body style="background-color: #fbfbfb;">
+
+
+
+  <header class="cstm-header">
+    <nav class="navbar navbar-expand-sm bg-clr navbar-dark header-nav-bar">
+      <a class="navbar-brand" [routerLink]="['/home']">Health Monitor</a>
+    </nav>
+  </header>
+  <section class="middal-section" style="">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+          <h2 class="title">Your Vitals</h2>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-6 col-md-12 col-sm-12">
+          <div class="card cstm-card">
+            <a >
+              <div class="card-body card-body-area card-body-icon">
+                <h5 class="card-title">Stress</h5>
+                <div>
+                  <figure><img src="../../assets/images/stress.png" /></figure>
+                </div>
+
+              </div>
+              <div class="card-body card-body-area card-body-padding">
+
+                <div class="graph-area">
+                  <figure><img src="../../assets/images/graph.png" /></figure>
+                </div>
+                <h5 class="card-title"><span class="dot dot-bg-1"></span>Medium</h5>
+              </div>
+              <div class="card-body card-body-area card-body-date">
+                <h5 class="card-title">Today, 16:20</h5>
+
+
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-12 col-sm-12">
+          <div class="card cstm-card">
+            <a >
+              <div class="card-body card-body-area card-body-icon">
+                <h5 class="card-title">Calorie Burn</h5>
+                <div>
+                  <figure><img src="../../assets/images/calorie-burn.png" /></figure>
+                </div>
+
+              </div>
+              <div class="card-body card-body-area card-body-padding">
+
+                <div class="graph-area">
+                  <figure><img src="../../assets/images/graph.png" /></figure>
+                </div>
+                <h5 class="card-title"><span class="dot dot-bg-2"></span>186 Cal</h5>
+              </div>
+              <div class="card-body card-body-area card-body-date">
+                <h5 class="card-title">Today, 16:20</h5>
+
+
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-12 col-sm-12">
+          <div class="card cstm-card">
+            <a [routerLink]="['/day-sleep']">
+              <div class="card-body card-body-area card-body-icon">
+                <h5 class="card-title">Sleep</h5>
+                <div>
+                  <figure><img src="../../assets/images/sleep.png" /></figure>
+                </div>
+
+              </div>
+              <div class="card-body card-body-area card-body-padding">
+
+                <div class="graph-area">
+                  <figure><img src="../../assets/images/graph.png" /></figure>
+                </div>
+                <h5 class="card-title"><span class="dot dot-bg-2"></span>7h 28m</h5>
+              </div>
+              <div class="card-body card-body-area card-body-date">
+                <h5 class="card-title">Today, 16:20</h5>
+
+
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-12 col-sm-12">
+          <div class="card cstm-card">
+            <a [routerLink]="['/day-heartrate']">
+              <div class="card-body card-body-area card-body-icon">
+                <h5 class="card-title">Heart Rate Viability</h5>
+                <div>
+                  <figure><img src="../../assets/images/heart-rate.png" /></figure>
+                </div>
+
+              </div>
+              <div class="card-body card-body-area card-body-padding">
+
+                <div class="graph-area">
+                  <figure><img src="../../assets/images/pipe-graph.png" /></figure>
+                </div>
+                <h5 class="card-title"><span class="dot"></span>Medium</h5>
+              </div>
+              <div class="card-body card-body-area card-body-date">
+                <h5 class="card-title">Today, 16:20</h5>
+
+
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-12 col-sm-12">
+          <div class="card cstm-card">
+            <a [routerLink]="['/day-steps']">
+              <div class="card-body card-body-area card-body-icon">
+                <h5 class="card-title">Steps</h5>
+                <div>
+                  <figure><img src="../../assets/images/steps.png" /></figure>
+                </div>
+
+              </div>
+              <div class="card-body card-body-area card-body-padding">
+
+                <div class="graph-area">
+                  <figure><img src="../../assets/images/graph.png" /></figure>
+                </div>
+                <h5 class="card-title"><span class="dot dot-bg-1"></span>1280 <span style="font-size: 1rem;">(50% of the
+                    Goal)</span></h5>
+              </div>
+              <div class="card-body card-body-area card-body-date">
+                <h5 class="card-title">Today, 16:20</h5>
+
+
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-12 col-sm-12">
+          <div class="card cstm-card">
+            <a>
+              <div class="card-body card-body-area card-body-icon">
+                <h5 class="card-title">Blood Oxygen Saturation</h5>
+                <div>
+                  <figure><img src="../../assets/images/blood-oxyigen.png" /></figure>
+                </div>
+
+              </div>
+              <div class="card-body card-body-area card-body-padding">
+
+                <div class="graph-area">
+                  <figure><img src="../../assets/images/graph.png" /></figure>
+                </div>
+                <h5 class="card-title"><span class="dot dot-bg-2"></span>Good</h5>
+              </div>
+              <div class="card-body card-body-area card-body-date">
+                <h5 class="card-title">Today, 16:20</h5>
+
+
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <div data-spm="footer" id="footer-bar" data-aplus-ae="x2_3d0459a0"
+    data-spm-anchor-id="a2g0n.home.0.footer.121e78c95m2fY3">
+    <div class="footer-item">
+      <a id="footer-home" [routerLink]="['/home']" data-spm="d_home" class="active">
+        <figure class="inactive-icon"><img src="../../assets/images/icon/home-inactive.png" width="40" height="40">
+        </figure>
+        <figure class="active-icon"><img src="../../assets/images/icon/home-active.png" width="40" height="40"></figure>
+        <span class="footer-text footer-active">Home</span>
+      </a>
+    </div>
+    <div class="footer-item">
+      <a id="footer-category" [routerLink]="['/day-steps']" data-spm="d_category">
+        <figure class="inactive-icon"><img src="../../assets/images/icon/calnender-inactive.png" width="40" height="40">
+        </figure>
+        <figure class="active-icon"><img src="../../assets/images/icon/calnender-active.png" width="40" height="40">
+        </figure>
+        <span class="footer-text">Today</span>
+      </a>
+    </div>
+    <div class="footer-item">
+      <a id="footer-cart" [routerLink]="['/recommendations']" data-spm="d_shopcart">
+        <figure class="inactive-icon"><img src="../../assets/images/icon/recomandation-inactive.png" width="40"
+            height="40"></figure>
+        <figure class="active-icon"><img src="../../assets/images/icon/recomandation-active.png" width="40" height="40">
+        </figure>
+        <span class="footer-text">Recommendation</span>
+      </a>
+    </div>
+    <div class="footer-item">
+      <a id="footer-account" [routerLink]="['/devices']" data-spm="d_account">
+        <figure class="inactive-icon"><img src="../../assets/images/icon/devices-inactive.png" width="40" height="40">
+        </figure>
+        <figure class="active-icon"><img src="../../assets/images/icon/devices-active.png" width="40" height="40">
+        </figure>
+        <span class="footer-text">Device</span>
+      </a>
+    </div>
+    <div class="footer-item">
+      <a id="footer-account" [routerLink]="['/profile']" data-spm="d_account">
+        <div class="profile-area">
+          <figure class="profilepik"><img src="../../assets/images/profile.jpg" width="40" height="40" /></figure>
+        </div>
+        <span class="footer-text">Profile</span>
+      </a>
+    </div>
+  </div>
+
+
+</body>
+<script>
+  $('.footer-item a').click(function (e) {
+    e.preventDefault();
+    $('a').removeClass('active');
+    $(this).addClass('active');
+  });
+</script>

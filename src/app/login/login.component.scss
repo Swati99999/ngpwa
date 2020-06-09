@@ -1,0 +1,193 @@
+
+body {
+    margin: 0;
+    font-family: 'Roboto';
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    background-color: #fff;
+}
+
+
+/********* header ************/
+.bg-clr {background-color: #982485;}
+.navbar-dark .navbar-nav .nav-link {color: #ffffff;}
+
+
+/****** end header ***********/
+
+/****** banner ******/
+
+#banner{width:100%;float:left;}
+
+
+/* style inputs and link buttons */
+input,
+.btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  margin: 5px 0;
+  opacity: 0.85;
+  display: inline-block;
+  font-size: 17px;
+  line-height: 20px;
+  text-decoration: none; /* remove underline from anchors */
+}
+
+input:hover,
+.btn:hover {
+  opacity: 1;
+}
+
+/* add appropriate colors to fb, twitter and google buttons */
+.fb {
+  background-color: #3B5998;
+  color: white;
+}
+
+.twitter {
+  background-color: #55ACEE;
+  color: white;
+}
+
+.google {
+  background-color: #dd4b39;
+  color: white;
+}
+
+/* style the submit button */
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+}
+
+
+
+/* Two-column layout */
+.col {
+  float: left;
+  width: 50%;
+  margin: auto;
+  padding: 0 50px;
+  margin-top: 6px;
+}
+
+
+/* vertical line */
+.vl {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  border: 2px solid #ddd;
+  height: 175px;
+}
+
+/* text inside the vertical line */
+.vl-innertext {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #f1f1f1;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  padding: 8px 10px;
+}
+
+/* hide some text on medium and large screens */
+.hide-md-lg {
+  display: none;
+}
+
+/* bottom container */
+.bottom-container {
+  text-align: center;
+  background-color: #666;
+  border-radius: 0px 0px 4px 4px;
+}
+
+input.brd {
+    border: 2px solid #982485;
+    margin: 15px 0;
+}
+
+input.bk-clr {
+    background-color: #982485;
+}
+
+button.tablinks {
+    background: none !important;
+    border: none !important;
+    color: #fff !important;
+}
+
+.cst-form {
+    margin: 35px 0;
+}
+
+.cst-form input.brd:nth-child(2) {
+    margin-bottom: 50px;
+}
+
+.cst-form1 {
+    margin: 35px 0px;
+}
+
+a.google.btn {
+    margin-top: 20px;
+}
+
+.form {
+    padding: 0px 20px;
+}
+figure {
+    margin: 0 0 0 0;
+}
+.container-fluid, .container-sm, .container-md, .container-lg, .container-xl {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 0px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/************** media query css *******************/
+
+@media only screen and (max-width: 767px) {
+
+    .col-lg-6.col-md-6.col-sm-12.col-xs-12.form {
+        position: absolute;
+        padding-left: 50px;
+        padding-right: 25px;
+    }
+    
+    .col-lg-6.col-md-6.col-sm-12.col-xs-12{
+    position: relative;
+        width: 100%;
+        padding-right: 0px;
+        padding-left: 15px;
+    }
+    .cst-form2.form {
+        margin-top: 35px;
+    }
+    .form {
+        padding: 0px 0px;
+    }
+    
+    
+    
+    }
+    
+    @media only screen and (max-width: 576px) {
+    
+    
+    }
+
+
+
+
+/****** end  banner ******/
+
