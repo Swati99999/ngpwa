@@ -1,0 +1,91 @@
+<body style="background-color: #fbfbfb;">
+    <header class="cstm-header">
+        <nav class="navbar navbar-expand-sm bg-clr navbar-dark header-nav-bar">
+            <div class="back-arrow">
+                <a [routerLink]="['/home']">
+                    <span>
+                        <i class="fa fa-angle-left" aria-hidden="true"></i>
+                    </span>
+                </a>
+            </div>
+            <a class="navbar-brand" [routerLink]="['/home']">Health Monitor</a>
+
+        </nav>
+    </header>
+    <section class="middal-section" style="">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <h2 class="title">Weight</h2>
+                    <div class="Steps-btn">
+                        <button class="step-button">March 2020
+                            <span>
+                                <i class="fa fa-caret-down" aria-hidden="true"></i>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <div class="weight-summary-content">
+                        <h2>Monthly Average Weight : 52 Kgs</h2>
+
+                    </div>
+
+                    <div class="step-summary-graph">
+                        <figure>
+                            <img src="../../assets/images/waight-month-graph-1.png" />
+                        </figure>
+                    </div>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12">
+
+                    <div class="step-summary-graph">
+                        <figure>
+                            <img src="../../assets/images/waight-month-graph-2.png" />
+                        </figure>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <div data-spm="footer" id="footer-bar" data-aplus-ae="x2_3d0459a0" data-spm-anchor-id="a2g0n.home.0.footer.121e78c95m2fY3">
+        <div class="footer-item">
+            <a id="footer-home" [routerLink]="['/day-weight']" data-spm="d_home">
+
+                <span class="footer-text footer-active">Day</span>
+            </a>
+        </div>
+        <div class="footer-item">
+            <a id="footer-category" [routerLink]="['/week-weight']" data-spm="d_category">
+
+                <span class="footer-text">Week</span>
+            </a>
+        </div>
+        <div class="footer-item">
+            <a id="footer-cart" [routerLink]="['/month-weight']" data-spm="d_shopcart" class="active">
+
+                <span class="footer-text">Month</span>
+            </a>
+        </div>
+        <div class="footer-item">
+            <a id="footer-account" [routerLink]="['/year-weight']" data-spm="d_account">
+
+                <span class="footer-text">Year</span>
+            </a>
+        </div>
+
+    </div>
+</body>
+<script>
+    $('.footer-item a').click(function (e) {
+        e.preventDefault();
+        $('a').removeClass('active');
+        $(this).addClass('active');
+    });
+</script>

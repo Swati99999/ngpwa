@@ -20,7 +20,6 @@
        url("../../../assets/font/Roboto-Regular.otf") format("otf");
 }
 
-/********* header ************/
 .bg-clr {background-color: #982485;}
 .cstm-header{float: left;width:100%}
 .navbar-dark .navbar-nav .nav-link {color: #ffffff;}
@@ -31,7 +30,7 @@
 /********* middal-section ************/
 .middal-section{float: left;width: 100%;margin-bottom: 110px;}
 .middal-section h2{font-family:"Roboto-Regular";color: #861073;display: inline-block; }
-.middal-section h2:after {content: "";display: block;width: 40%;background-color: #14e7c2;height: 3px;position: relative;top: 10px;}
+.middal-section h2:after {content: "";display: block;width: 40px;background-color: #14e7c2;height: 3px;position: relative;top: 10px;}
 .middal-section h2.title{margin-top: 15px;}
 .card.cstm-card{display: inline-block;width:100%;-webkit-box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.1);
 -moz-box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.1);
@@ -47,7 +46,9 @@ box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.1);border-radius: 15px;margin-top: 30p
 .card-add-input-bl.dl-input input[type='checkbox']{--active-inner: #2a28af;--border: #2a28af;}
 .card-add-input-bl.d-gr-input input[type='checkbox']{--active-inner: #81b944;--border: #81b944;}
 .card-add-device h3.bg-blue.d-gr{color: #81b944;}
-
+.Steps-btn span {
+    margin-left: 15px;
+}
 
  
 .step-summary-graph{width: 100%;overflow: hidden;margin-top: 1rem;}

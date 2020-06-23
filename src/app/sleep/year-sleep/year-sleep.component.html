@@ -1,0 +1,140 @@
+<body style="background-color: #fbfbfb;">
+  <header class="cstm-header">
+    <nav class="navbar navbar-expand-sm bg-clr navbar-dark header-nav-bar">
+      <div class="back-arrow">
+        <a [routerLink]="['/home']">
+          <span>
+            <i class="fa fa-angle-left" aria-hidden="true"></i>
+          </span>
+        </a>
+      </div>
+      <a class="navbar-brand" [routerLink]="['/home']">Health Monitor</a>
+
+    </nav>
+  </header>
+  <section class="middal-section" style="">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+          <h2 class="title">Sleep</h2>
+          <div class="Steps-btn">
+            <button class="step-button">2020
+              <span>
+                <i class="fa fa-caret-down" aria-hidden="true"></i>
+              </span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-5 col-md-12">
+            <div class="progress" data-percentage="20">
+              <span class="progress-left">
+                <span class="progress-bar"></span>
+              </span>
+              <span class="progress-right">
+                <span class="progress-bar"></span>
+              </span>
+              <div class="progress-value">
+                <div>
+                  <span class="count-value">35%</span>
+                  <br>
+                  <span class="count-text">Average Sleep Hours</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-7 col-md-12">
+            <div class="card cstm-card cstm-step-month">
+
+              <div class="card-body">
+
+                <div class="card-add-device">
+                  <h3 class="bg-gray">Deep Sleep Duration</h3>
+                  <h3 class="card-right-content">2h 5m</h3>
+                </div>
+                <div class="card-add-device">
+                  <h3 class="bg-gray">Rem Sleep Duration</h3>
+                  <div class="card-right-content">1h 9m</div>
+                </div>
+                <div class="card-add-device">
+                  <h3 class="bg-gray">Light Sleep Duration</h3>
+                  <div class="card-right-content">1h 4m</div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12">
+          <div class="step-summary-content">
+            <h2>Year Sleep Summary</h2>
+
+          </div>
+
+          <div class="step-summary-graph">
+            <figure>
+              <img src="../../assets/images/sleep-year-timelin.png" />
+            </figure>
+          </div>
+        </div>
+        <div class="col-lg-12 col-md-12 col-sm-12">
+          <div class="step-summary-content">
+            <h4>Average Heart Rate &nbsp
+              <span class="h-rate">59</span>
+            </h4>
+            <h4>Average Breath Rate
+              <span class="b-rate">14</span>
+            </h4>
+          </div>
+          <div class="step-summary-graph">
+            <figure>
+              <img src="../../assets/images/sleep-year-hartrate.png" />
+            </figure>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <div data-spm="footer" id="footer-bar" data-aplus-ae="x2_3d0459a0" data-spm-anchor-id="a2g0n.home.0.footer.121e78c95m2fY3">
+    <div class="footer-item">
+      <a id="footer-home" [routerLink]="['/day-sleep']" data-spm="d_home">
+
+        <span class="footer-text footer-active">Day</span>
+      </a>
+    </div>
+    <div class="footer-item">
+      <a id="footer-category" [routerLink]="['/week-sleep']" data-spm="d_category">
+
+        <span class="footer-text">Week</span>
+      </a>
+    </div>
+    <div class="footer-item">
+      <a id="footer-cart" [routerLink]="['/month-sleep']" data-spm="d_shopcart">
+
+        <span class="footer-text">Month</span>
+      </a>
+    </div>
+    <div class="footer-item">
+      <a id="footer-account" [routerLink]="['/year-sleep']" data-spm="d_account" class="active">
+
+        <span class="footer-text">Year</span>
+      </a>
+    </div>
+
+  </div>
+</body>
+<script>
+  $('.footer-item a').click(function (e) {
+    e.preventDefault();
+    $('a').removeClass('active');
+    $(this).addClass('active');
+  });
+</script>

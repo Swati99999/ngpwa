@@ -2,7 +2,13 @@
 
     <header class="cstm-header">
         <nav class="navbar navbar-expand-sm bg-clr navbar-dark header-nav-bar">
-            <div class="back-arrow"><span><i class="fa fa-angle-left" aria-hidden="true"></i></span></div>
+            <div class="back-arrow">
+                <a [routerLink]="['/home']">
+                    <span>
+                        <i class="fa fa-angle-left" aria-hidden="true"></i>
+                    </span>
+                </a>
+            </div>
             <a class="navbar-brand" [routerLink]="['/home']">Health Monitor</a>
 
         </nav>
@@ -11,29 +17,32 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <h2 class="title">Blood Pressure</h2>
-                    <div class="Steps-btn"><button class="step-button">March 2020</button></div>
+                    <h2 class="title">Cardiovascular Health</h2>
+                    <div class="Steps-btn">
+                        <button class="step-button">March 2020
+                            <span>
+                                <i class="fa fa-caret-down" aria-hidden="true"></i>
+                            </span>
+                        </button>
+                    </div>
                 </div>
             </div>
-
-
-
             <div class="row">
-
-                <div class="col-lg-12 col-md-12 col-sm-12">
-
-                    <div class="ht-summary-content">
-                        <h4>Average Blood Pressure : <span class="h-rate">140 / 90</span> mm HG</h4>
-
+                <div class="col-lg-12 col-md-12 col-sm-12 mt-3">
+                    <div class="step-summary-graph">
+                        <figure>
+                            <img src="../../assets/images/cardiovascular-health-month.png" />
+                        </figure>
                     </div>
                     <div class="step-summary-graph">
-                        <figure><img src="../../assets/images/heart-month-average.png" /></figure>
+                        <figure>
+                            <img src="../../assets/images/cardiovascular-health-month-1.png" />
+                        </figure>
                     </div>
                     <div class="step-summary-graph">
-                        <figure><img src="../../assets/images/heart-month-uperbond.png" /></figure>
-                    </div>
-                    <div class="step-summary-graph">
-                        <figure><img src="../../assets/images/heart-month-lowerbound.png" /></figure>
+                        <figure>
+                            <img src="../../assets/images/cardiovascular-health-month-2.png" />
+                        </figure>
                     </div>
                 </div>
 
@@ -42,11 +51,9 @@
 
         </div>
     </section>
-
-    <div data-spm="footer" id="footer-bar" data-aplus-ae="x2_3d0459a0"
-        data-spm-anchor-id="a2g0n.home.0.footer.121e78c95m2fY3">
+    <div data-spm="footer" id="footer-bar" data-aplus-ae="x2_3d0459a0" data-spm-anchor-id="a2g0n.home.0.footer.121e78c95m2fY3">
         <div class="footer-item">
-            <a id="footer-home" [routerLink]="['/day-heartrate']" data-spm="d_home" >
+            <a id="footer-home" [routerLink]="['/day-heartrate']" data-spm="d_home">
 
                 <span class="footer-text footer-active">Day</span>
             </a>
@@ -64,7 +71,7 @@
             </a>
         </div>
         <div class="footer-item">
-            <a id="footer-account" [routerLink]="['/month-heartrate']" data-spm="d_account" class="">
+            <a id="footer-account" [routerLink]="['/year-heartrate']" data-spm="d_account" class="">
 
                 <span class="footer-text">Year</span>
             </a>

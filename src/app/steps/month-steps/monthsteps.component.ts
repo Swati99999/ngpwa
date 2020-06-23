@@ -8,23 +8,7 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 export class MonthstepsComponent implements OnInit {
     
     hide = true;
-
-    
-    constructor(
-        
-    ) {
-       
-    }
-
-    
-    ngOnInit(): void {
-
-        
-    }
-
-    login() {
-
-       
-
-    }
+    constructor() {}
+    ngOnInit(): void {}
+    login() {}
 }

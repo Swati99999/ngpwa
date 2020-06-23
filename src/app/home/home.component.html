@@ -1,7 +1,4 @@
 <body style="background-color: #fbfbfb;">
-
-
-
   <header class="cstm-header">
     <nav class="navbar navbar-expand-sm bg-clr navbar-dark header-nav-bar">
       <a class="navbar-brand" [routerLink]="['/home']">Health Monitor</a>
@@ -18,7 +15,7 @@
       <div class="row">
         <div class="col-lg-6 col-md-12 col-sm-12">
           <div class="card cstm-card">
-            <a >
+            <a [routerLink]="['/day-stress']">
               <div class="card-body card-body-area card-body-icon">
                 <h5 class="card-title">Stress</h5>
                 <div>
@@ -35,7 +32,7 @@
               </div>
               <div class="card-body card-body-area card-body-date">
                 <h5 class="card-title">Today, 16:20</h5>
-
+                <div class="bubble-img"><figure><a [routerLink]="['/recommand-stress']"><img src="../../assets/images/blub-image.png"/></a></figure></div>  
 
               </div>
             </a>
@@ -43,7 +40,7 @@
         </div>
         <div class="col-lg-6 col-md-12 col-sm-12">
           <div class="card cstm-card">
-            <a >
+            <a [routerLink]="['/day-steps']">
               <div class="card-body card-body-area card-body-icon">
                 <h5 class="card-title">Calorie Burn</h5>
                 <div>
@@ -95,7 +92,7 @@
           <div class="card cstm-card">
             <a [routerLink]="['/day-heartrate']">
               <div class="card-body card-body-area card-body-icon">
-                <h5 class="card-title">Heart Rate Viability</h5>
+                <h5 class="card-title">Blood Pressure</h5>
                 <div>
                   <figure><img src="../../assets/images/heart-rate.png" /></figure>
                 </div>
@@ -106,11 +103,11 @@
                 <div class="graph-area">
                   <figure><img src="../../assets/images/pipe-graph.png" /></figure>
                 </div>
-                <h5 class="card-title"><span class="dot"></span>Medium</h5>
+                <h5 class="card-title"><span class="dot dot-bg-4"></span>Medium</h5>
               </div>
               <div class="card-body card-body-area card-body-date">
                 <h5 class="card-title">Today, 16:20</h5>
-
+                <div class="bubble-img"><figure><a href=""><img src="../../assets/images/blub-new-image.png"/></a></figure></div>  
 
               </div>
             </a>
@@ -131,12 +128,12 @@
                 <div class="graph-area">
                   <figure><img src="../../assets/images/graph.png" /></figure>
                 </div>
-                <h5 class="card-title"><span class="dot dot-bg-1"></span>1280 <span style="font-size: 1rem;">(50% of the
+                <h5 class="card-title"><span class="dot dot-bg-4"></span>1280 <span style="font-size: 1rem;">(50% of the
                     Goal)</span></h5>
               </div>
               <div class="card-body card-body-area card-body-date">
                 <h5 class="card-title">Today, 16:20</h5>
-
+                <div class="bubble-img"><figure><a href=""><img src="../../assets/images/blub-new-image.png"/></a></figure></div>  
 
               </div>
             </a>
@@ -146,7 +143,8 @@
           <div class="card cstm-card">
             <a>
               <div class="card-body card-body-area card-body-icon">
-                <h5 class="card-title">Blood Oxygen Saturation</h5>
+                  <a [routerLink]="['/day-oxygen']">
+                <h5 class="card-title">Blood Oxygen Saturation</h5> </a>
                 <div>
                   <figure><img src="../../assets/images/blood-oxyigen.png" /></figure>
                 </div>
@@ -157,7 +155,7 @@
                 <div class="graph-area">
                   <figure><img src="../../assets/images/graph.png" /></figure>
                 </div>
-                <h5 class="card-title"><span class="dot dot-bg-2"></span>Good</h5>
+                <h5 class="card-title"><span class="dot dot-bg-3"></span>High</h5>
               </div>
               <div class="card-body card-body-area card-body-date">
                 <h5 class="card-title">Today, 16:20</h5>
@@ -167,6 +165,63 @@
             </a>
           </div>
         </div>
+
+        <div class="col-lg-6 col-md-12 col-sm-12">
+          <div class="card cstm-card">
+            <a [routerLink]="['/day-energy']">
+              <div class="card-body card-body-area card-body-icon">
+                <h5 class="card-title">Energy Expenditure</h5>
+                <div>
+                  <figure><img src="../../assets/images/energy-expenditure.png" /></figure>
+                </div>
+
+              </div>
+              <div class="card-body card-body-area card-body-padding">
+
+                <div class="graph-area">
+                  <figure><img src="../../assets/images/pipe-graph.png" /></figure>
+                </div>
+                <h5 class="card-title"><span class="dot dot-bg-3"></span>High</h5>
+              </div>
+              <div class="card-body card-body-area card-body-date">
+                <h5 class="card-title">Today, 16:20</h5>
+
+
+              </div>
+            </a>
+          </div>
+        </div>
+
+
+
+        <div class="col-lg-6 col-md-12 col-sm-12">
+          <div class="card cstm-card">
+            <a [routerLink]="['/day-weight']">
+              <div class="card-body card-body-area card-body-icon">
+                <h5 class="card-title">Weight</h5>
+                <div>
+                  <figure><img src="../../assets/images/weight.png" /></figure>
+                </div>
+
+              </div>
+              <div class="card-body card-body-area card-body-padding">
+
+                <div class="graph-area">
+                  <figure><img src="../../assets/images/pipe-graph.png" /></figure>
+                </div>
+                <h5 class="card-title"><span class="dot  dot-bg-4"></span>45 Kgs</h5>
+              </div>
+              <div class="card-body card-body-area card-body-date">
+                <h5 class="card-title">Today, 16:20</h5>
+
+                <div class="bubble-img"><figure><a href=""><img src="../../assets/images/blub-new-image.png"/></a></figure></div>  
+              </div>
+            </a>
+          </div>
+        </div>
+
+
+
       </div>
 
     </div>

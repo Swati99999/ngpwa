@@ -10,25 +10,25 @@ export class RecommendationsComponent implements OnInit {
     public exampleData: Array<Select2OptionData>;
 
     items = [
-      {id: 1, name: 'Nutrition'},
-      {id: 2, name: 'Activity'},
+        { id: 1, name: 'Nutrition' },
+        { id: 2, name: 'Lifestyle' },
     ];
-    
+
     constructor(
-        
+
     ) {
-       
+
     }
 
-    
+
     ngOnInit(): void {
 
-        
+
     }
 
     login() {
 
-       
+
 
     }
 }
